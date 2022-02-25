@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .form-control {
+        @apply w-full h-9 px-2 font-semibold rounded-md;
+    }
+    .form-control:focus {
+        @apply outline-none ring-2 ring-blue-600 border-0;
+    }
+    .btn {
+        @apply border-0 bg-slate-900/90 h-9 hover:bg-slate-700 text-white w-[48%] rounded-md;
+    }
+    .btn-slate {
+        @apply outline-none ring-2 ring-slate-700;
+    }
+    .text-gradient-br {
+        @apply bg-gradient-to-br bg-clip-text inline text-6xl text-transparent font-semibold;
+    }
+    .text-bludo {
+        @apply from-blue-400 to-indigo-500;
+    }
+}
